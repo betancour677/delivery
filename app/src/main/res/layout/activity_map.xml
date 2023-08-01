@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/colorfondo">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map"
+        android:layout_gravity="center"
+        android:padding="16dp" />
+
+    <!-- Simulación de ingreso de dirección -->
+    <EditText
+        android:id="@+id/etDireccionEnvio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu dirección de envío"
+        android:inputType="textPostalAddress"
+        android:layout_marginTop="16dp" />
+
+    <!-- Simulación de botón para confirmar la dirección -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar dirección"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:onClick="onConfirmarDireccionClick" />
+
+    <!-- Simulación de botón para volver atrás -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:onClick="onVolverClick" />
+
+</LinearLayout>
